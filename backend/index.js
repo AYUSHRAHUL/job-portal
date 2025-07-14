@@ -16,10 +16,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const corsOptions = {
-    origin:'https://job-portal-inky-five.vercel.app',
-    credentials:true
-}
+const allowedOrigins = [
+  'http://localhost:5173',  // Dev (optional)
+  'https://job-portal-inky-five.vercel.app' // Prod
+];
 
 app.use(cors(corsOptions));
 
