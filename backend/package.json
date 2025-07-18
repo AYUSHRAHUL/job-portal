@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-  },
+ "scripts": {
+  "dev": "nodemon index.js",         // for local development
+  "start": "node index.js",          // for production
+  "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
