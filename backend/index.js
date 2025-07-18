@@ -20,7 +20,7 @@ app.use(cookieParser());
 // ✅ Properly define corsOptions
 const allowedOrigins = [
   'http://localhost:5173',  // Local dev
-  'https://job-portal-inky-five.vercel.app'  // Production frontend
+  'https://job-khojo-sand.vercel.app'  // Production frontend
 ];
 
 const corsOptions = {
